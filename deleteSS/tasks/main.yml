@@ -1,0 +1,7 @@
+---
+# tasks file for deleteSS
+- name: Delete snapshot
+  openstack.cloud.volume_snapshot:
+          state: absent
+          display_name: test_snapshot
+          volume: test_snapshot

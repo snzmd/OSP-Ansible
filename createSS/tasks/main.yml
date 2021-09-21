@@ -1,0 +1,7 @@
+---
+# tasks file for createSS
+- name: Create snapshot
+  openstack.cloud.volume_snapshot:
+          state: present
+          display_name: test_snapshot
+          volume: test_snapshot
